@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+}
+
+
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:black;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#ffcc00;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li{
+cursor:pointer;
+}
+
+nav ul li:hover{
+color:#ffcc00;
+}
+
+
+
+.hero{
+height:80vh;
+background:url("bac3.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.8;
+}
+.navbar{
+    font-size:22px;
+font-weight:bold;
+color:#ffcc00;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:#ffcc00;
+font-weight:bold;
+cursor:pointer;
+border-radius:6px;
+}
+
+
+
+.movies{
+padding:60px;
+}
+
+.movies h2{
+margin-bottom:30px;
+}
+
+.movie-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1b1b1b;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #ffcc00;
+}
+
+.card-content{
+padding:15px;
+}
+
+.card-content h3{
+margin:0;
+}
+
+.rating{
+color:#ffcc00;
+margin:5px 0;
+}
+
+.book-btn{
+margin-top:10px;
+padding:8px 15px;
+background:#ffcc00;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+margin-top:50px;
+}
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:black;
+}
+
+
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 80px;
+background:#000;
+border-bottom:1px solid #222;
+position:sticky;
+top:0;
+}
+
+
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#ffcc00;
+letter-spacing:1px;
+}
+
+
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:35px;
+margin:0;
+padding:0;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#bbb;
+font-size:16px;
+position:relative;
+transition:0.3s;
+}
+
+
+
+.nav-links a:hover{
+color:#fff;
+}
+
+
+
+.nav-links a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#ffcc00;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+body{
+margin:0;
+font-family:Arial;
+color:white;
+}
+
+
+
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+
+
+.bg-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+z-index:-1;
+}
+
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+
+.hero-content h1{
+font-size:50px;
+}
+
+.hero-content p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.explore{
+background:#f1c40f;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+border-radius:5px;
+font-size:16px;
+}
+.movies-container{
+display: flex;
+gap:0px;
+padding:0;
+margin: 0;
+justify-content: flex-start;
+}
+
+.footer {
+  background: #0a0a0a;
+  color: #ccc;
+  padding: 40px 20px 10px;
+}
+
+
+.footer {
+  background: #000;
+  padding: 60px 20px 20px;
+  position: relative;
+}
+
+
+.footer-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(255, 152, 0, 0.1);
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.footer-box {
+  width: 220px;
+  margin: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #fff, #ff9800);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.footer-box a {
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: 0.3s ease;
+}
+
+.footer-box a:hover {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+
+.social a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #ff9800;
+  transform: scale(1.5);
+  box-shadow: 0 0 10px #ff9800;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+
+.layer {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s;
+}
+
+
+.bg {
+  background-image: url("bac3.jpg"); /* bridge or city */
+  z-index: 1;
+}
+
+
+.mid {
+  background-image: url(""); /* smoke / blur image */
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.front {
+  background-image: url(""); /* main character */
+  z-index: 3;
+}
+
+
+.content {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  color: white;
+  top: 40%;
+}
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.modal-box{
+background:white;
+color:black;
+padding:25px;
+border-radius:15px;
+width:300px;
+text-align:center;
+}
+
+.btn{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.google{ background:#fff; border:1px solid #ccc; }
+.email{ background:#f1f1f1; }
+.apple{ background:black; color:white; }
+
+.login-btn{
+background:#ff2e63;
+color:white;
+width:100%;
+padding:10px;
+border:none;
+border-radius:8px;
+margin-top:10px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.close{
+float:right;
+cursor:pointer;
+font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">🎬 Sphere Cinemas & Festival</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="movies.php">Movies</a></li>
+<li><a href="instruction.html">Facilities</a></li>
+<li><a href="contacts.php">Contacts</a></li>
+<li><a href="offers.html">Offers</a></li>
+<li><a href="admin_login.php">Admin</a></li>
+</ul>
+
+</nav>
+
+<hr>
+
+
+
+
+
+<div class="hero">
+
+  <div class="layer bg"></div>
+  <div class="layer mid"></div>
+  <div class="layer front"></div>
+
+<section class="hero">
+
+<h1>Book Movie Tickets Online</h1>
+
+<p>Explore movies, & festival events</p>
+
+<a href="register.html">
+    <button>Register & book tickets</button>
+</a>
+
+</section>
+</div>
+</div>
+
+<section class="movies">
+
+<h2>🔥Top Trending Movies</h2>
+
+<div class="movie-grid">
+
+
+<div class="card">
+
+<img src="odd.jpg">
+
+<div class="card-content">
+
+<h3>The Oddessy </h3>
+
+<p class="rating">⭐7.1 Rating</p>
+<a href="booking.php">
+<button class="book-btn">Trending Now</button>
+</a>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="avg.jpg">
+
+<div class="card-content">
+
+<h3>Avengers</h3>
+
+<p class="rating">⭐ 8.4 Rating</p>
+
+<button class="book-btn">Trending Now</button>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="spider.jpg">
+
+<div class="card-content">
+
+<h3>Spider Man</h3>
+
+<p class="rating">⭐ 8.2 Rating</p>
+
+<button class="book-btn">Trending Now</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="spi.jpg">
+
+<div class="card-content">
+
+<h3>Spirit</h3>
+
+<p class="rating">⭐ 9.5 Rating</p>
+
+<button class="book-btn">Trending Now</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="var.jpg">
+
+<div class="card-content">
+
+<h3>Varanasi</h3>
+
+<p class="rating">⭐ 8.5 Rating</p>
+
+<button class="book-btn">Trending Now</button>
+
+</div>
+
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<h2>🎞️ Now showing</h2>
+
+<div class="movie-grid">
+
+
+<div class="card">
+
+<img src="dhu.jpg">
+
+<div class="card-content">
+
+<h3>Dhurandhar 2</h3>
+
+<p class="rating">⭐7.2 Rating</p>
+<a href="https://www.youtube.com/watch?v=NHk7scrb_9I"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="toxic.jpg">
+
+<div class="card-content">
+
+<h3>Toxic</h3>
+
+<p class="rating">⭐ 7.1Rating</p>
+<a href="https://www.youtube.com/watch?v=IOADonyCAcc"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="ped.jpg">
+
+<div class="card-content">
+
+<h3>Peddi</h3>
+
+<p class="rating">⭐ 7.3 Rating</p>
+<a href="https://www.youtube.com/watch?v=XvxlmIGoXuU"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="the.jpg">
+
+<div class="card-content">
+
+<h3>The Paradise</h3>
+
+<p class="rating">⭐ 8.1 Rating</p>
+<a href="https://www.youtube.com/watch?v=hiGvxpvdPvY"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="no.jpg">
+
+<div class="card-content">
+
+<h3>Spider Man:Brand New Day</h3>
+
+<p class="rating">⭐ 8.7 Rating</p>
+<a href="https://www.youtube.com/watch?v=Fjl4RIVtXNE"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<h2>📉 Top Rating Movies</h2>
+
+<div class="movie-grid">
+
+
+<div class="card">
+
+<img src="jud.jpg">
+
+<div class="card-content">
+
+<h3>Zootipia 2</h3>
+
+<p class="rating">⭐ 9.8 Rating</p>
+
+<button class="book-btn">Top Rating</button>
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="jurassic.jpg">
+
+<div class="card-content">
+
+<h3>Jurassic World</h3>
+
+<p class="rating">⭐ 9.9 Rating</p>
+
+<button class="book-btn">Top Rating</button>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="lion.jpg">
+
+<div class="card-content">
+
+<h3>The Lion King</h3>
+
+<p class="rating">⭐ 9.5 Rating</p>
+
+<button class="book-btn">Top Rating</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="fast.jpg">
+
+<div class="card-content">
+
+<h3>Furious 7</h3>
+
+<p class="rating">⭐ 9.7 Rating</p>
+
+<button class="book-btn">Top Rating</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="black.jpg">
+
+<div class="card-content">
+
+<h3>Black Panther</h3>
+
+<p class="rating">⭐ 9.8 Rating</p>
+
+<button class="book-btn">Top Rating</button>
+
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+
+<h2>🎥 Re Relese Movies</h2>
+
+<div class="movie-grid">
+
+
+<div class="card">
+
+<img src="manma.jpg">
+
+<div class="card-content">
+
+<h3>Manmadhan</h3>
+
+<p class="rating">⭐7.2 Rating</p>
+<a href="https://www.youtube.com/watch?v=layFo3gCdTQ"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="star.jpg">
+
+<div class="card-content">
+
+<h3>Star Wars: The Empire Strikes Back </h3>
+
+<p class="rating">⭐ 7.1 Rating</p>
+<a href="https://www.youtube.com/watch?v=JNwNXF9Y6kY"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="tit.jpg">
+
+<div class="card-content">
+
+<h3>Titanic</h3>
+
+<p class="rating">⭐ 9.1 Rating</p>
+<a href="https://www.youtube.com/watch?v=kVrqfYjkTdQ"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="fight.jpg">
+
+<div class="card-content">
+
+<h3>Fight Club</h3>
+
+<p class="rating">⭐ 9.3 Rating</p>
+<a href="https://www.youtube.com/watch?v=qtRKdVHc-cE"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="inter.jpg">
+
+<div class="card-content">
+
+<h3>Interstellar</h3>
+
+<p class="rating">⭐ 9.9 Rating</p>
+<a href="https://www.youtube.com/watch?v=zSWdZVtXT7E"
+target="_blank">
+<button class="book-btn">Watch Trailer</button>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+
+  <div class="footer-glass">
+
+    <div class="footer-container">
+
+      
+      <div class="footer-box">
+        <h1 class="logo">Sphere</h1>
+        <p>Watch. Book. Experience cinema like never before.</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="movies.php">Movies</a>
+        <a href="booking.php">Bookings</a>
+        <a href="contacts.html">Contact</a>
+        <a href="offers.html">Offers</a>
+      </div>
+
+      
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p>support@spherecinema.com</p>
+        <p>+91 9597227440</p>
+      </div>
+
+      
+      <div class="footer-box">
+        <h3>Follow</h3>
+        <div class="social">
+          <a href="index.html">●</a>
+          <a href="index.html">●</a>
+          <a href="index.html">●</a>
+          <a href="index.html">●</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</footer>
+<footer>
+
+<p>© 2026 sphere Cinema &  Festival</p>
+
+</footer>
+
+<script>
+const hero = document.querySelector(".hero");
+
+document.addEventListener("mousemove", (e) => {
+    let x = (window.innerWidth / 2 - e.pageX) / 40;
+    let y = (window.innerHeight / 2 - e.pageY) / 40;
+
+    hero.style.transform = `rotateY(${x}deg) rotateX(${y}deg) scale(1.05)`;
+});
+</script>
+
+
+</body>
+
+</html>

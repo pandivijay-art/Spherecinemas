@@ -1,0 +1,160 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sphere Cinema Payment</title>
+
+<style>
+
+body{
+background:#070b18;
+font-family:Arial;
+color:white;
+text-align:center;
+}
+
+h1{
+color:gold;
+margin-top:30px;
+}
+
+.payment-box{
+width:400px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:10px;
+margin-top:30px;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.details{
+margin-bottom:20px;
+font-size:18px;
+}
+
+.method{
+background:#1f1f1f;
+padding:12px;
+margin:10px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.method:hover{
+background:#00e5ff;
+color:black;
+}
+
+.pay-btn{
+margin-top:20px;
+padding:12px 40px;
+font-size:18px;
+background:#ff4757;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+.pay-btn:hover{
+background:#e84118;
+}
+
+.success{
+display:none;
+color:#2ecc71;
+font-size:20px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Payment Gateway</h1>
+
+<div class="payment-box">
+
+<div class="details">
+Movie : Avengers Endgame
+</div>
+
+<div class="details">
+Show Time : <span id="time"></span>
+</div>
+
+<div class="details">
+Seats : <span id="seats"></span>
+</div>
+
+<div class="details">
+Total Price : ₹<span id="price"></span>
+</div>
+
+<h3>Select Payment Method</h3>
+
+<div class="method" onclick="selectMethod(this)">UPI Payment</div>
+<div class="method" onclick="selectMethod(this)">Credit / Debit Card</div>
+<div class="method" onclick="selectMethod(this)">Net Banking</div>
+
+<button class="pay-btn" onclick="payNow()">Pay Now</button>
+
+<div class="success" id="successMsg">
+✅ Payment Successful
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("time").innerText =
+localStorage.getItem("time");
+
+document.getElementById("seats").innerText =
+localStorage.getItem("seats");
+
+document.getElementById("price").innerText =
+localStorage.getItem("price");
+
+let selectedMethod="";
+
+function selectMethod(element){
+
+document.querySelectorAll(".method").forEach(m=>{
+m.style.background="#1f1f1f";
+m.style.color="white";
+});
+
+element.style.background="#00e5ff";
+element.style.color="black";
+
+selectedMethod=element.innerText;
+
+}
+
+function payNow(){
+
+if(selectedMethod===""){
+alert("Please select payment method");
+return;
+}
+
+document.getElementById("successMsg").style.display="block";
+
+setTimeout(function(){
+
+window.location.href="ticket.html";
+
+},2000);
+
+}
+
+</script>
+
+</body>
+</html>
+```

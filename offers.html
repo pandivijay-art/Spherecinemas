@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sphere Cinema | Offers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+
+
+nav{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:18px;
+background:black;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+
+
+.hero{
+
+height:400px;
+background:url("off.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:50px;
+color:white;
+padding:20px 40px;
+border-radius:10px;
+
+}
+
+
+
+.offer-container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:60px 10%;
+
+}
+
+
+
+.offer-card{
+
+background:#111;
+border-radius:15px;
+padding:30px;
+text-align:center;
+transition:.4s;
+position:relative;
+overflow:hidden;
+
+}
+
+.offer-card:hover{
+
+transform:translateY(-10px);
+box-shadow:0 0 25px #00e5ff;
+
+}
+
+.offer-card h2{
+
+color:#00e5ff;
+margin-bottom:10px;
+
+}
+
+.offer-card p{
+
+color:#bbb;
+margin-bottom:20px;
+
+}
+
+.offer-card button{
+
+background:#00e5ff;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.offer-card button:hover{
+
+background:#00bcd4;
+
+}
+
+
+
+.coupon{
+
+margin-top:15px;
+font-size:14px;
+background:#222;
+padding:8px;
+border-radius:6px;
+
+}
+
+
+
+.special{
+
+background:linear-gradient(45deg,#ff512f,#dd2476);
+padding:40px;
+text-align:center;
+margin:50px 10%;
+border-radius:15px;
+
+}
+
+.special h2{
+
+font-size:35px;
+
+}
+
+.special button{
+
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:white;
+color:black;
+font-weight:bold;
+border-radius:6px;
+cursor:pointer;
+
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:20px;
+background:black;
+margin-top:40px;
+color:#888;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="movies.php">Movies</a>
+<a href="instruction.html">Facilities</a>
+<a href="contacts.php">Contacts</a>
+<a href="offers.html">Offers</a>
+
+</nav>
+
+
+
+<div class="hero">
+
+<h1>🔥Exclusive Movie Offers</h1>
+
+</div>
+
+
+
+<div class="offer-container">
+
+<div class="offer-card">
+
+<h2>🍿 Popcorn Combo</h2>
+
+<p>Buy 2 movie tickets and get free popcorn combo.</p>
+
+<button class="btn book" onclick="location.href='movies.php'">
+Book Tickets
+</button>
+
+<div class="coupon">Use Code : POPCORN50</div>
+
+</div>
+
+
+<div class="offer-card">
+
+<h2>🎟 Student Discount</h2>
+
+<p>Students And Staffs get 30% discount on weekday shows.</p>
+
+
+<button class="btn book" onclick="location.href='movies.php'">
+Book Tickets
+</button>
+
+<div class="coupon">Use Code : STUDENT30</div>
+
+</div>
+
+
+<div class="offer-card">
+
+<h2>🎉 Weekend Blast</h2>
+
+<p>Enjoy 20% off on weekend movie tickets.</p>
+
+<div class="buttons">
+<button class="btn book" onclick="location.href='movies.php'">
+Book Tickets
+</button>
+<br>
+<div class="coupon">Use Code : WEEKEND20</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="special">
+
+<h2>🎬 Mega Festival Offer</h2>
+
+<p>Flat 50% discount for festival shows</p>
+
+<button>Grab Offer</button>
+
+</div>
+
+
+<footer>
+
+© 2026 Sphere Cinema | All Rights Reserved 🎬
+
+</footer>
+
+</body>
+</html>

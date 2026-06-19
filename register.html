@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Registration</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+height:100vh;
+background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("register.jpg");
+background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+background: rgba(255,255,255,0.08);
+padding:40px;
+width:350px;
+border-radius:15px;
+backdrop-filter: blur(10px);
+text-align:center;
+color:white;
+}
+
+.input-box{
+margin-bottom:15px;
+}
+
+.input-box input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background: rgba(255,255,255,0.15);
+color:white;
+}
+
+.btn{
+width:100%;
+padding:12px;
+border:none;
+background:#ff3c3c;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body >
+
+<div class="container">
+
+<h2>User Registration</h2>
+<br>
+
+
+<form action="register.php" method="post">
+
+<div class="input-box">
+<input type="text" name="username" placeholder="Enter Name" required>
+</div>
+
+<div class="input-box">
+<input type="email" name="email" placeholder="Enter Email" required>
+</div>
+
+<div class="input-box">
+<input type="password" name="password" placeholder="Enter Password" required>
+</div>
+
+<button class="btn" type="submit">Register</button>
+
+</form>
+
+
+<div class="login-link">
+
+</div>
+
+</div>
+
+
+</body>
+</html>
